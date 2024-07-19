@@ -1,0 +1,42 @@
+/* style.css */
+body {
+  font-family: Arial, sans-serif;
+}
+
+.container {
+  padding: 20px;
+}
+
+nav ul {
+  list-style: none;
+  padding: 0;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 10px;
+}
+
+.main-heading {
+  font-size: 2em;
+  margin-bottom: 20px;
+}
+
+#my-work img {
+  display: block;
+  margin: 10px auto;
+  max-width: 100%;
+}
+
+footer {
+  background: #333;
+  color: #fff;
+  padding: 20px;
+  text-align: center;
+}
+
+footer a {
+  color: #fff;
+  margin: 0 10px;
+  text-decoration: none;
+}

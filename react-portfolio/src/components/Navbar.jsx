@@ -1,12 +1,12 @@
 import React from 'react';
 import { Link } from 'react-router-dom';
-import '../assets/css/style.css'; // Ensure this path is correct
+import '../assets/css/style.css';
 
 const Navbar = () => {
   return (
-    <nav>
+    <nav className='sidenav'>
       <ul>
-        <li><Link to="/">About</Link></li>
+        <li id='link-one'><Link to="/">About</Link></li>
         <li><Link to="/my-work">My Work</Link></li>
         <li><Link to="/contact">Contact</Link></li>
         <li><Link to="/resume">Resume</Link></li>

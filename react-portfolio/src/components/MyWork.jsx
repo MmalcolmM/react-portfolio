@@ -8,9 +8,11 @@ const MyWork = () => {
   return (
     <div id="my-work">
       <h1 className="main-heading">My Work</h1>
-      <img src={darkWhisperImage} alt="Dark Whisper" />
-      <img src={placeholderImage} alt="Placeholder" />
-      <img src={radiantSoulImage} alt="Radiant Soul" />
+      <div className="work-images">
+        <img src={darkWhisperImage} alt="Dark Whisper" />
+        <img src={radiantSoulImage} alt="Radiant Soul" />
+        <img src={placeholderImage} alt="Placeholder" />
+      </div>
     </div>
   );
 };

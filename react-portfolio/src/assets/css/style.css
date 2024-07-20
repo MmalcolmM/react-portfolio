@@ -1,42 +1,149 @@
-/* style.css */
-body {
-  font-family: Arial, sans-serif;
+/* Side navigation */
+.sidenav {
+  height: 100%;
+  width: 160px;
+  position: fixed;
+  z-index: 1;
+  top: 0;
+  left: 0;
+  background-color: #111;
+  overflow-x: hidden;
+  padding-top: 20px;
 }
 
-.container {
-  padding: 20px;
-}
-
-nav ul {
-  list-style: none;
+.sidenav ul {
+  list-style-type: none; /* Remove bullet points from the list */
   padding: 0;
+  margin: 0;
 }
 
-nav ul li {
-  display: inline;
-  margin-right: 10px;
+.sidenav ul li {
+  padding: 8px 16px;
+  text-decoration: none;
+  color: #818181;
+  display: block;
+  font-family: Arial, sans-serif; /* Standard font family */
 }
 
-.main-heading {
-  font-size: 2em;
-  margin-bottom: 20px;
+.sidenav ul li a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.sidenav ul li a:hover {
+  color: #f1f1f1;
+}
+
+/* Body styling */
+body {
+  background-color: #000000;
+  margin: 0;
+  padding: 0;
+  font-family: Arial, sans-serif; /* Standard font family */
+  font-size: 16px; /* Standard font size */
+  line-height: 1.5; /* Standard line height */
+  color: #FFFFFF; /* Standard text color */
+  display: flex;
+  flex-direction: column;
+  min-height: 100vh;
+}
+
+/* Container styling */
+.container {
+  text-align: center;
+  color: white;
+  max-width: 1000px;
+  margin: 0 auto; /* Center the container horizontally */
+  padding: 20px; /* Add padding for better spacing */
+  padding-left: 180px; /* Offset for the fixed sidenav */
+  flex: 1;
+}
+
+/* Header image styling */
+#main-photo {
+  width: 200px;
+}
+
+/* My Work section styling */
+#my-work {
+  margin-top: 20px;
+  text-align: center;
 }
 
 #my-work img {
-  display: block;
-  margin: 10px auto;
-  max-width: 100%;
+  width: 300px;
+  max-width: 100%; /* Ensure images are responsive */
+  height: auto;
+  margin: 10px;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
 
+/* Flex container for images */
+.work-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+/* Footer styling */
 footer {
   background: #333;
   color: #fff;
   padding: 20px;
   text-align: center;
+  margin-top: auto;
+}
+
+footer section {
+  display: inline-block; /* Display sections inline */
+  margin: 0 20px; /* Add spacing between sections */
 }
 
 footer a {
-  color: #fff;
-  margin: 0 10px;
+  color: whitesmoke;
   text-decoration: none;
+  padding: 10px;
+}
+
+footer a:hover {
+  color: #f1f1f1;
+}
+
+/* Responsive styling for small screens */
+@media only screen and (max-width: 786px) {
+  .sidenav {
+    position: relative;
+    width: 100%;
+    text-align: center;
+    padding-top: 0;
+  }
+
+  .sidenav a {
+    display: inline-block;
+    justify-content: center;
+    padding: 10px;
+  }
+
+  .container {
+    padding-left: 0; /* Remove offset for smaller screens */
+    padding-top: 20px;
+  }
+
+  .work-images {
+    flex-direction: column;
+    align-items: center;
+  }
+
+  #my-work img {
+    width: 90%;
+  }
+}
+
+/* Ensure figcaption is properly centered */
+#about-text {
+  text-align: center;
+  margin-top: 20px;
+  padding: 10px;
 }

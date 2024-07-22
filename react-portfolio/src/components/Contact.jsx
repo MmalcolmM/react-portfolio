@@ -26,10 +26,28 @@ const Contact = () => {
         setErrors({ ...errors, [name]: error });
     };
 
+    const handleSubmit = (e) => {
+        e.preventDefault();
+        let validationErrors = {};
+        Object.keys(form).forEach((key) => {
+            if (!form[key]) {
+                validationErrors[key] = `${key} is required`;
+            } else if (key === 'email' && !validateEmail(form[key])) {
+                validationErrors[key] = 'Invalid email address';
+            }
+        });
+        setErrors(validationErrors);
+
+        if (Object.keys(validationErrors).length === 0) {
+            // Submit the form
+            console.log('Form submitted:', form);
+        }
+    };
+
     return (
-        <div id="contact">
+        <div id="contact" className="form-container">
             <h2>Contact Me</h2>
-            <form>
+            <form onSubmit={handleSubmit}>
                 <div>
                     <label>Name:</label>
                     <input
@@ -39,7 +57,7 @@ const Contact = () => {
                         onChange={handleChange}
                         onBlur={handleBlur}
                     />
-                    {errors.name && <p>{errors.name}</p>}
+                    {errors.name && <p className="error">{errors.name}</p>}
                 </div>
                 <div>
                     <label>Email:</label>
@@ -50,7 +68,7 @@ const Contact = () => {
                         onChange={handleChange}
                         onBlur={handleBlur}
                     />
-                    {errors.email && <p>{errors.mail}</p>}
+                    {errors.email && <p className="error">{errors.email}</p>}
                 </div>
                 <div>
                     <label>Message:</label>
@@ -60,13 +78,11 @@ const Contact = () => {
                         onChange={handleChange}
                         onBlur={handleBlur}
                     ></textarea>
-                    {errors.message && <p>{errors.message}</p>}
+                    {errors.message && <p className="error">{errors.message}</p>}
                 </div>
                 <button type="submit">Submit</button>
             </form>
             <section>
-                <a href="mailto:Malcolm.franklin.m@gmail.com">Email </a>
-                <a href="https://github.com/MmalcolmM">GitHub</a>
                 <a href="https://www.linkedin.com/in/mmalcolmm/?trk=public-profile-join-page"></a>
             </section>
         </div>

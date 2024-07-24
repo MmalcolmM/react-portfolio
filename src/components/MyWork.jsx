@@ -7,7 +7,7 @@ import radiantSoulImage from '../assets/images/radiantsoul.png';
 const MyWork = () => {
   return (
     <div id="my-work">
-      <h1 className="main-heading">My Work</h1>
+      <h2 className="main-heading">My Work</h2>
       <div className="work-images">
         <a href='https://darkwhispers.onrender.com/'> <img src={darkWhisperImage} alt="Dark Whisper" /></a>
         <a href=""><img src={placeholderImage} alt="Placeholder" /></a>

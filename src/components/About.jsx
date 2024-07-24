@@ -5,7 +5,7 @@ import malcolmImage from '../assets/images/Malcolm.jpg';  // Make sure this path
 const About = () => {
   return (
     <div id="about">
-      <h1 className="main-heading">About Me</h1>
+      <h2 className="main-heading">About Me</h2>
       <p>Malcolm Franklin</p>
       <img src={malcolmImage} alt="Handsome black man" id='main-photo'/>
       <div id="about-text">

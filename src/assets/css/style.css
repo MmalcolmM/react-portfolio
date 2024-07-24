@@ -63,6 +63,10 @@ body {
   color: rgb(212, 54, 212);
 }
 
+.header {
+  text-align: center;
+  padding-left: 180px;
+}
 /* Header image styling */
 #main-photo {
   width: 200px;

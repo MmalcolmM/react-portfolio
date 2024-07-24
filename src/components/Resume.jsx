@@ -4,9 +4,9 @@ import '../assets/css/style.css';
 const Resume = () => {
   return (
     <div id="resume">
-      <h1>Resume</h1>
-      <p>Download my <a href="path/to/resume.pdf" download>resume</a>.</p>
-      <h2>Proficiencies</h2>
+      <h2>Resume</h2>
+      <p>Download my <a href="/resume.pdf" download>resume</a>.</p>
+      <h3>Proficiencies</h3>
       <ul>
         <li>HTML</li>
         <li>CSS</li>

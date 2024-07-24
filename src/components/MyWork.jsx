@@ -9,9 +9,9 @@ const MyWork = () => {
     <div id="my-work">
       <h1 className="main-heading">My Work</h1>
       <div className="work-images">
-        <img src={darkWhisperImage} alt="Dark Whisper" />
-        <img src={radiantSoulImage} alt="Radiant Soul" />
-        <img src={placeholderImage} alt="Placeholder" />
+        <a href='https://darkwhispers.onrender.com/'> <img src={darkWhisperImage} alt="Dark Whisper" /></a>
+        <a href=""><img src={placeholderImage} alt="Placeholder" /></a>
+        <a href="https://rsesthetics.com/" > <img src={radiantSoulImage} alt="Radiant Soul" /> </a>
       </div>
     </div>
   );

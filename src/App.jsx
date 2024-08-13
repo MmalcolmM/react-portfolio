@@ -5,7 +5,6 @@ import Navbar from './components/Navbar';
 import About from './components/About';
 import MyWork from './components/MyWork';
 import Contact from './components/Contact';
-import Footer from './components/Footer';
 import Resume from './components/Resume';
 import Header from './components/Header'; 
 import './assets/css/style.css';
@@ -23,7 +22,6 @@ function App() {
           <Route path="/resume" element={<Resume />} />
         </Routes>
       </div>
-      <Footer />
     </Router>
   );
 }

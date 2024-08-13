@@ -5,7 +5,7 @@ body {
 }
 
 #root {
-height: 100%;
+  height: 100%;
 }
 
 body {
@@ -63,10 +63,34 @@ body {
   color: rgb(212, 54, 212);
 }
 
+/* Header styling */
 .header {
   text-align: center;
-  padding-left: 180px;
+  padding: 20px 0;
+  padding-left: 160px;
+
 }
+
+.header h1 {
+  font-size: 2em;
+  margin: 0;
+}
+
+@media (max-width: 768px) {
+  .header {
+    padding: 10px 0;
+  }
+
+  .header h1 {
+    font-size: 1.5em;
+  }
+
+  .container {
+    padding-left: 0;
+    padding-top: 20px;
+  }
+}
+
 /* Header image styling */
 #main-photo {
   width: 200px;
@@ -86,6 +110,68 @@ body {
   border-radius: 8px;
   box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
 }
+
+/* Work images styling */
+.work-images {
+  display: flex;
+  flex-direction: row;
+  justify-content: center;
+  flex-wrap: wrap;
+}
+
+.project {
+  position: relative;
+  margin: 10px;
+}
+
+.project img {
+  width: 300px;
+  max-width: 100%;
+  height: auto;
+  border-radius: 8px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.overlay {
+  position: absolute;
+  top: 0;
+  bottom: 0;
+  left: 0;
+  right: 0;
+  height: 100%;
+  width: 100%;
+  opacity: 0;
+  transition: 0.5s ease;
+  background-color: rgba(0, 0, 0, 0.7);
+  border-radius: 8px;
+  pointer-events: none; /* Make the overlay non-interactive */
+}
+
+.project:hover .overlay {
+  opacity: 1;
+  pointer-events: auto; /* Allow interactions when overlay is visible */
+}
+
+.text {
+  color: white;
+  font-size: 20px;
+  position: absolute;
+  top: 50%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  text-align: center;
+}
+
+.repo-link {
+  color: #4cae4c;
+  text-decoration: none;
+  font-weight: bold;
+}
+
+.repo-link:hover {
+  color: #5cb85c;
+}
+
 
 /* Flex container for images */
 .work-images {
@@ -186,7 +272,7 @@ form button:hover {
 }
 
 #resume a {
-  color: #4cae4c; /* Change the color of the resume download link */
+  color: #4cae4c;
   text-decoration: none;
   font-weight: bold;
 }
@@ -198,17 +284,12 @@ form button:hover {
 /* Footer styling */
 footer {
   background-color: #111;
-  /* padding: 20px; */
+  color: grey;
+  padding: 20px;
   text-align: center;
   padding-left: 180px;
-   /* flex: 1; */
-  /* padding-left: 180px; */
+  margin-top: auto;
 }
-
-/* footer section {
-  display: inline-block;
-  margin: 0 20px;
-} */
 
 footer a {
   color: whitesmoke;
@@ -227,10 +308,8 @@ footer a:hover {
   }
 
   footer {
-  padding: 20px;
-  max-width: 1000px;
-
-
+    padding: 20px;
+    max-width: 1000px;
   }
 
   form input,

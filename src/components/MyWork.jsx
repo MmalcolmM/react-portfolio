@@ -7,13 +7,7 @@ import radiantSoulImage from '../assets/images/radiantsoul.png';
 const MyWork = () => {
   // Define an array of project objects, each containing information about the project
   const projects = [
-    {
-      imgSrc: darkWhisperImage,  // Image source for the project
-      alt: "Dark Whisper",       // Alt text for the image
-      name: "Dark Whisper",      // Project name
-      projectLink: "https://darkwhispers.onrender.com/",  // Link to the project website
-      repoLink: "https://github.com/sentorus67/DarkWhispers"  // Link to the project repository
-    },
+
     {
       imgSrc: radiantSoulImage,
       alt: "Radiant Soul",
@@ -21,6 +15,15 @@ const MyWork = () => {
       projectLink: "https://rsesthetics.com/",
       repoLink: "https://github.com/MmalcolmM/radiant-soul-esthetics"
     },
+    
+    {
+      imgSrc: darkWhisperImage,  // Image source for the project
+      alt: "Dark Whisper",       // Alt text for the image
+      name: "Dark Whisper",      // Project name
+      projectLink: "https://darkwhispers.onrender.com/",  // Link to the project website
+      repoLink: "https://github.com/sentorus67/DarkWhispers"  // Link to the project repository
+    },
+   
     {
       imgSrc: placeholderImage,
       alt: "Placeholder",

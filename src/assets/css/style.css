@@ -68,6 +68,7 @@ body {
   text-align: center;
   padding: 20px 0;
   padding-left: 160px;
+  font-size: 15px;
 
 }
 
@@ -89,6 +90,29 @@ body {
     padding-left: 0;
     padding-top: 20px;
   }
+}
+
+.contactInfo {
+  padding: 0;
+  margin: 0;
+  list-style-type: none; /* Remove list bullets */
+  text-align: center; /* Center the list */
+  margin-top: 30px;
+}
+
+.contactInfo li {
+  display: inline-block; /* Make list items display inline */
+  margin: 0 10px; /* Add some spacing between items */
+}
+
+.contactInfo li a {
+  color: white;
+  text-decoration: none; /* Remove underline from links */
+}
+
+.contactInfo li a:hover {
+  text-decoration: underline; /* Optional: Underline on hover */
+  color: rgb(212, 54, 212); /* Add hover effect */
 }
 
 /* Header image styling */

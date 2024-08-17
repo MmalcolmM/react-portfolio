@@ -19,6 +19,7 @@ const Resume = () => {
       <p>Download my <a href="/resumePdf.pdf" download>resume</a>.</p>
       <h3>Proficiencies</h3>
       <ul>
+        <li>Python</li>
         <li>HTML</li>
         <li>CSS</li>
         <li>JavaScript</li>

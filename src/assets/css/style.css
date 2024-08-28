@@ -12,7 +12,7 @@ body {
   display: flex;
   flex-direction: column;
   background-color: #000000;
-  font-family: Arial, sans-serif;
+  font-family: 'Times New Roman', Times, serif, sans-serif;
   font-size: 16px;
   line-height: 1.5;
   color: #FFFFFF;
@@ -68,7 +68,7 @@ body {
   text-align: center;
   padding: 20px 0;
   padding-left: 160px;
-  font-size: 15px;
+  font-size: 12px;
 
 }
 

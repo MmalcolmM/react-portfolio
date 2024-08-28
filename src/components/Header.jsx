@@ -7,6 +7,7 @@ const Header = () => {
   return (
     <header className="header">
       <h1>Decent now. Watch me become great.</h1>
+      {/* <h1>Driven to improve every day. Watch as I become exceptional."</h1> */}
       
     </header>
   );
